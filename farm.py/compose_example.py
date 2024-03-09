@@ -27,7 +27,7 @@ class Animal():
         print("🗣 Talk")
 
     def raise_young(self, child):
-        pass
+        print("🐤👀 Look after the young")
 
 
 class Duck(Animal):
@@ -54,6 +54,8 @@ class Swan(Animal):
     def raise_young(self, child):
         if isinstance(child, Swan):
             print("🐤 ↗️ 🦢 Carry on back")
+        else:
+            super().raise_young(child)
 
 if __name__ == "__main__":
     print("👩‍🌾 Welcome to the farm!")
@@ -62,7 +64,7 @@ if __name__ == "__main__":
     Farm([Duck(), Duck()], [Duck(), Duck()]).simulate()
 
     print("\nWe have swans!")
-    Farm([Swan(), Swan()], [Swan(), Swan()]).simulate()
+    Farm([Swan(), Swan()], [Swan(), Duck()]).simulate()
 
     print("\nWe have ducks and swans!")
     Farm([Duck(), Swan()], [Duck(), Swan()]).simulate()

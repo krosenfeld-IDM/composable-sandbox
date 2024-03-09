@@ -13,7 +13,7 @@ animal_configs = {
         "walk": "🚶 Waddle",
         "raise_young": {
             "Swan": "🐤 ↗️ 🦢 Carry on back",
-            "default": "🐤😢 Abandon"
+            "default": "🐤👀 Look after the young"
         }
     }
 }
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     Farm(["Duck", "Duck"], ["Duck", "Duck"]).simulate()
 
     print("\nWe have swans!")
-    Farm(["Swan", "Swan"], ["Swan", "Swan"]).simulate()
+    Farm(["Swan", "Swan"], ["Swan", "Duck"]).simulate()
 
     print("\nWe have ducks and swans!")
     Farm(["Duck", "Swan"], ["Duck", "Swan"]).simulate()
