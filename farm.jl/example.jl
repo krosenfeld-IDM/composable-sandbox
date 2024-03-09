@@ -11,7 +11,7 @@ simulate_farm([Duck(), Duck()], [Duck(), Duck()])
 
 # Simulate swans
 println("\nWe have swans!")
-simulate_farm([Swan(), Swan()], [Swan(), Swan()])
+simulate_farm([Swan(), Swan()], [Duck(), Swan()])
 
 # Both swans and ducks
 println("\nWe have ducks and swans!")

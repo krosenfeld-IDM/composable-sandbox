@@ -24,6 +24,7 @@ end
 abstract type Animal end
 walk(self::Animal) = println("🚶 Waddle")
 talk(self::Animal) = println("🗣 Talk")
+raise_young(self::Animal, child::Animal) = println("🐤👀 Look after the young")
 
 struct Duck <: Animal end
 raise_young(self::Duck, child::Animal) = println("🐤😢 Abandon")
