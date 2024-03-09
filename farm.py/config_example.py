@@ -48,12 +48,14 @@ class Farm():
         raise_behavior = parent_config["raise_young"].get(child_name, parent_config["raise_young"]["default"])
         print(raise_behavior)
 
-print("👩‍🌾 Welcome to the farm!")
-print("\nWe have ducks!")
-Farm(["Duck", "Duck"], ["Duck", "Duck"]).simulate()
 
-print("\nWe have swans!")
-Farm(["Swan", "Swan"], ["Swan", "Swan"]).simulate()
+if __name__ == "__main__":
+    print("👩‍🌾 Welcome to the farm!")
+    print("\nWe have ducks!")
+    Farm(["Duck", "Duck"], ["Duck", "Duck"]).simulate()
 
-print("\nWe have ducks and swans!")
-Farm(["Duck", "Swan"], ["Duck", "Swan"]).simulate()
+    print("\nWe have swans!")
+    Farm(["Swan", "Swan"], ["Swan", "Swan"]).simulate()
+
+    print("\nWe have ducks and swans!")
+    Farm(["Duck", "Swan"], ["Duck", "Swan"]).simulate()
